@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/Ashwini-dudu/Hello-Devops.git"
+                git 'https://github.com/Ashwini-dudu/Hello-Devops.git'
             }
         }
 
