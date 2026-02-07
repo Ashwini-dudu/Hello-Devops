@@ -3,27 +3,21 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Ashwini-dudu/Hello-Devops.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
-                sh 'pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'pytest'
+                bat 'pytest'
             }
         }
 
         stage('Package') {
             steps {
-                sh 'tar -cvf app.tar app.py requirements.txt'
+                bat 'tar -cvf app.tar app.py requirements.txt'
             }
         }
 
