@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Ashwini-dudu/Hello-Devops.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 bat 'pip install -r requirements.txt'
