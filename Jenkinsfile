@@ -2,8 +2,7 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Checkout') {
+    	{
             steps {
                 git 'https://github.com/Ashwini-dudu/Hello-Devops.git'
             }
