@@ -18,7 +18,7 @@ pipeline {
 			steps {
 				withCredentials([file(credentialsId: 'ec2-pem-file', variable: 'KEYFILE')]) {
 					bat """
-ssh -o StrictHostKeyChecking=no -i %KEYFILE% ubuntu@13.60.181.30 ^
+ssh -o StrictHostKeyChecking=no -i %KEYFILE% ubuntu@13.60.46.167 ^
 "cd Hello-Devops && git pull && docker build -t ashwinikum/hello-devops-app:latest . && docker push ashwinikum/hello-devops-app:latest"
 """
         }
