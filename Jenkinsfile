@@ -19,10 +19,9 @@ pipeline {
 				withCredentials([file(credentialsId: 'ec2-pem-file', variable: 'KEYFILE')]) {
 					bat """
 ssh -o StrictHostKeyChecking=no -i %KEYFILE% ubuntu@13.60.46.167 ^
-"cd /Hello-Devops && git fetch origin main && git reset --hard origin/main && docker build -t ashwinikum/hello-devops-app:latest . && docker push ashwinikum/hello-devops-app:latest"
+"ls -la"
 """
-
-        }
+				}
     }
 }
 	}
