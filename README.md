@@ -2,20 +2,20 @@
 
 This project demonstrates a complete end-to-end DevOps CI/CD pipeline for a Python Flask application using GitHub, Jenkins, Docker, and AWS EC2. The pipeline automatically builds, tests, containerizes, and publishes the application on every code push.
 
-📌 Project Overview
+**📌 Project Overview**
 
 This project implements:
 
-Python Flask application
-Automated testing using pytest
-Jenkins CI pipeline
-GitHub webhook trigger
-Docker containerization
-Remote Docker builds on AWS EC2
-DockerHub image publishing
-The pipeline enables push-to-deploy style automation.
+     Python Flask application
+     Automated testing using pytest
+     Jenkins CI pipeline
+     GitHub webhook trigger
+     Docker containerization
+     Remote Docker builds on AWS EC2
+     DockerHub image publishing
+     The pipeline enables push-to-deploy style automation.
 
-🧱 Architecture
+**🧱 Architecture**
 Developer Push
      ↓
 GitHub Repository
