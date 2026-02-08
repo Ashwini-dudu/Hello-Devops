@@ -21,12 +21,8 @@ pipeline {
 ssh -o StrictHostKeyChecking=no ubuntu@13.60.181.30 ^
 "cd Hello-Devops && git pull && docker build -t ashwinikum/hello-devops-app:latest . && docker push ashwinikum/hello-devops-app:latest"
 """
-        }
-    }
-}
-
-
-
-
-
-
+	}
+	}
+	}
+	}
+	}
