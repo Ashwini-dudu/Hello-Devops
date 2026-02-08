@@ -25,4 +25,4 @@ ssh -o StrictHostKeyChecking=no -i %KEYFILE% ubuntu@13.60.181.30 ^
     }
 }
 	}
-	}
+}
