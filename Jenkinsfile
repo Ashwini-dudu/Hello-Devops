@@ -21,12 +21,7 @@ pipeline {
         stage('Remote Docker Build & Push') {
             steps {
                 bat """
-ssh -o StrictHostKeyChecking=no -i C:/jenkins-key/devops-key.pem ubuntu@13.60.181.30 ^
-"cd Hello-Devops && git pull && docker build -t ashwinikum/hello-devops-app:latest . && docker push YOUR_DOCKERHUB_USERNAME/hello-devops-app:latest"
-"""
-            }
-        }
-    }
-}
+ssh -o StrictHostKeyChecking=no -i C:/jenkins-key/Dockerkey.pem ubuntu@13.60.181.30 ^
+"cd Hello-Devops && git pull && docker build -t ashwinikum/hello-devops-app:latest . && docker push YOUR_DOCKERHUB_USERNAME/hello-devops-app:l
 
 
