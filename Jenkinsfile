@@ -6,8 +6,6 @@ pipeline {
             steps {
                 git 'https://github.com/Ashwini-dudu/Hello-Devops.git'
             }
-        }
-
         stage('Install Dependencies') {
             steps {
                 bat 'pip install -r requirements.txt'
@@ -30,4 +28,5 @@ ssh -o StrictHostKeyChecking=no -i C:/jenkins-key/devops-key.pem ubuntu@13.60.18
         }
     }
 }
+
 
